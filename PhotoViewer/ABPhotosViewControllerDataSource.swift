@@ -6,7 +6,6 @@
 //  Copyright © 2015 Alexander Blokhin. All rights reserved.
 //
 
-//import UIKit
 
 // A protocol defining methods that must exist on a data source for an `ABPhotosViewController`.
 

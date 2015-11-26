@@ -6,7 +6,6 @@
 //  Copyright © 2015 Alexander Blokhin. All rights reserved.
 //
 
-//import Foundation
 
 // A protocol that defines that an object contains a photo property.
 
