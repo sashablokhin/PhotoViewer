@@ -6,10 +6,11 @@
 //  Copyright © 2015 Alexander Blokhin. All rights reserved.
 //
 
-import Foundation
+//import Foundation
 
 // A protocol that defines that an object contains a photo property.
 
 protocol ABPhotoContainer {
-    var photo: ABPhoto {get} // An object conforming to the `ABPhoto` protocol.
+    // An object conforming to the `ABPhoto` protocol.
+    var photo: ABPhoto {get}
 }
