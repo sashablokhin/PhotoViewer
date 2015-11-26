@@ -18,12 +18,12 @@ import UIKit
     // The internal page view controller used for swiping horizontally, photo to photo. Created during `viewDidLoad`.
     var pageViewController: UIPageViewController?
     
-    // The object conforming to `NYTPhoto` that is currently being displayed by the `pageViewController`.
+    // The object conforming to `ABPhoto` that is currently being displayed by the `pageViewController`.
 
     var currentlyDisplayedPhoto: ABPhoto?
     
     // The overlay view displayed over photos. Created during `viewDidLoad`.
-    // var overlayView: ABPhotosOverlayView
+    var overlayView: ABPhotosOverlayView?
     
     // The left bar button item overlaying the photo.
     var leftBarButtonItem: UIBarButtonItem?

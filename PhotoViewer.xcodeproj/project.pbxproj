@@ -19,6 +19,7 @@
 		AB3DDE811C0727A500D2F446 /* ABPhotoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE801C0727A500D2F446 /* ABPhotoContainer.swift */; };
 		AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE821C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift */; };
 		AB3DDE851C07385600D2F446 /* ABPhotosViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE841C07385600D2F446 /* ABPhotosViewControllerDelegate.swift */; };
+		AB3DDE871C073FC200D2F446 /* ABPhotosOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AB3DDE801C0727A500D2F446 /* ABPhotoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoContainer.swift; sourceTree = "<group>"; };
 		AB3DDE821C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosViewControllerDataSource.swift; sourceTree = "<group>"; };
 		AB3DDE841C07385600D2F446 /* ABPhotosViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosViewControllerDelegate.swift; sourceTree = "<group>"; };
+		AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosOverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				AB3DDE7D1C07254D00D2F446 /* Protocols */,
 				AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */,
+				AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */,
 			);
 			name = ABPhotosFramework;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3DDE791C0717D000D2F446 /* Photo.swift in Sources */,
+				AB3DDE871C073FC200D2F446 /* ABPhotosOverlayView.swift in Sources */,
 				AB3DDE671C0703C800D2F446 /* ViewController.swift in Sources */,
 				AB3DDE651C0703C800D2F446 /* AppDelegate.swift in Sources */,
 				AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */,
