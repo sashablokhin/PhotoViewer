@@ -14,6 +14,10 @@
 		AB3DDE6F1C0703C800D2F446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB3DDE6D1C0703C800D2F446 /* LaunchScreen.storyboard */; };
 		AB3DDE771C0716DE00D2F446 /* PhotosProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE761C0716DE00D2F446 /* PhotosProvider.swift */; };
 		AB3DDE791C0717D000D2F446 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE781C0717D000D2F446 /* Photo.swift */; };
+		AB3DDE7C1C07225800D2F446 /* ABPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */; };
+		AB3DDE7F1C07259100D2F446 /* ABPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE7E1C07259100D2F446 /* ABPhoto.swift */; };
+		AB3DDE811C0727A500D2F446 /* ABPhotoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE801C0727A500D2F446 /* ABPhotoContainer.swift */; };
+		AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE821C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		AB3DDE701C0703C800D2F446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB3DDE761C0716DE00D2F446 /* PhotosProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosProvider.swift; sourceTree = "<group>"; };
 		AB3DDE781C0717D000D2F446 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosViewController.swift; sourceTree = "<group>"; };
+		AB3DDE7E1C07259100D2F446 /* ABPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhoto.swift; sourceTree = "<group>"; };
+		AB3DDE801C0727A500D2F446 /* ABPhotoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoContainer.swift; sourceTree = "<group>"; };
+		AB3DDE821C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosViewControllerDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,7 @@
 		AB3DDE631C0703C800D2F446 /* PhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				AB3DDE7A1C07214600D2F446 /* PhotoFramework */,
+				AB3DDE7A1C07214600D2F446 /* ABPhotosFramework */,
 				AB3DDE641C0703C800D2F446 /* AppDelegate.swift */,
 				AB3DDE661C0703C800D2F446 /* ViewController.swift */,
 				AB3DDE761C0716DE00D2F446 /* PhotosProvider.swift */,
@@ -71,11 +79,23 @@
 			path = PhotoViewer;
 			sourceTree = "<group>";
 		};
-		AB3DDE7A1C07214600D2F446 /* PhotoFramework */ = {
+		AB3DDE7A1C07214600D2F446 /* ABPhotosFramework */ = {
 			isa = PBXGroup;
 			children = (
+				AB3DDE7D1C07254D00D2F446 /* Protocols */,
+				AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */,
 			);
-			name = PhotoFramework;
+			name = ABPhotosFramework;
+			sourceTree = "<group>";
+		};
+		AB3DDE7D1C07254D00D2F446 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB3DDE7E1C07259100D2F446 /* ABPhoto.swift */,
+				AB3DDE821C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift */,
+				AB3DDE801C0727A500D2F446 /* ABPhotoContainer.swift */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +172,11 @@
 				AB3DDE791C0717D000D2F446 /* Photo.swift in Sources */,
 				AB3DDE671C0703C800D2F446 /* ViewController.swift in Sources */,
 				AB3DDE651C0703C800D2F446 /* AppDelegate.swift in Sources */,
+				AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */,
 				AB3DDE771C0716DE00D2F446 /* PhotosProvider.swift in Sources */,
+				AB3DDE7C1C07225800D2F446 /* ABPhotosViewController.swift in Sources */,
+				AB3DDE7F1C07259100D2F446 /* ABPhoto.swift in Sources */,
+				AB3DDE811C0727A500D2F446 /* ABPhotoContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
