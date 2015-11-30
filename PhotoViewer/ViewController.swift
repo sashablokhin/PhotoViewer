@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ABPhotosViewControllerDelegate {
     
     @IBOutlet var imageView: UIImageView!
     private let photos = PhotosProvider().photos
@@ -27,7 +27,9 @@ class ViewController: UIViewController {
     }
     
     func imageTapped() {
-        
+        let photosViewController = ABPhotosViewController(withPhotos: photos)
+        photosViewController.delegate = self
+        presentViewController(photosViewController, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,9 +9,9 @@
 
 // A protocol defining methods that must exist on a data source for an `ABPhotosViewController`.
 
-protocol NYTPhotosViewControllerDataSource {
+protocol ABPhotosViewControllerDataSource {
     // The total number of photos in the data source.
-    var numberOfPhotos: UInt {get}
+    var numberOfPhotos: Int {get}
     
     
     /* Returns the photo object at a specified index, or `nil` if one does not exist at that index.
@@ -20,7 +20,7 @@ protocol NYTPhotosViewControllerDataSource {
     *
     *  @return The photo object at a specified index, or `nil` if one does not exist at that index.
     */
-    func photoAtIndex(photoIndex: UInt) -> ABPhoto
+    func photoAtIndex(photoIndex: Int) -> ABPhoto?
     
     
     /* Returns the index of a given photo, or `NSNotFound` if the photo is ot in the data source.
@@ -29,7 +29,7 @@ protocol NYTPhotosViewControllerDataSource {
     *
     *  @return The index of a given photo, or `NSNotFound` if the photo is ot in the data source.
     */
-    func indexOfPhoto(photo: ABPhoto) -> UInt
+    func indexOfPhoto(photo: ABPhoto) -> Int?
     
     
     /* Returns a `Bool` representing whether the data source contains the passed-in photo.
@@ -48,7 +48,7 @@ protocol NYTPhotosViewControllerDataSource {
     *
     *  @return The photo at the index, or `nil` if there is none.
     */
-    func objectAtIndexedSubscript(photoIndex: UInt) -> ABPhoto
+    func objectAtIndexedSubscript(photoIndex: Int) -> ABPhoto?
 }
 
 

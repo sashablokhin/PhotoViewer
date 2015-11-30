@@ -19,7 +19,7 @@ class PhotosProvider: NSObject {
             let image = UIImage(named: "img_0\(photoIndex)")
             
             let title = NSAttributedString(string: "\(photoIndex + 1)", attributes: [NSForegroundColorAttributeName: UIColor.whiteColor()])
-            let photo = Photo(image: image, attributedCaptionTitle: title)
+            let photo = Photo(image: image!, attributedCaptionTitle: title)
             
             mutablePhotos.append(photo)
         }
