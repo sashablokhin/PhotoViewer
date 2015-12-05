@@ -26,7 +26,7 @@ class ABPhotosDataSource: ABPhotosViewControllerDataSource {
         }
     }
 
-// MARK: - NYTPhotosViewControllerDataSource
+// MARK: - ABPhotosViewControllerDataSource
     
     var numberOfPhotos: Int {
         return photos.count

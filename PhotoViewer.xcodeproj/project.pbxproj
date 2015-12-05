@@ -21,6 +21,9 @@
 		AB3DDE851C07385600D2F446 /* ABPhotosViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE841C07385600D2F446 /* ABPhotosViewControllerDelegate.swift */; };
 		AB3DDE871C073FC200D2F446 /* ABPhotosOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */; };
 		ABEE69251C0C839D00FB688D /* ABPhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69241C0C839D00FB688D /* ABPhotosDataSource.swift */; };
+		ABEE69271C0C8EDA00FB688D /* ABPhotoTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */; };
+		ABEE69291C0C905800FB688D /* ABPhotoTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */; };
+		ABEE692B1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		AB3DDE841C07385600D2F446 /* ABPhotosViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosViewControllerDelegate.swift; sourceTree = "<group>"; };
 		AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosOverlayView.swift; sourceTree = "<group>"; };
 		ABEE69241C0C839D00FB688D /* ABPhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotosDataSource.swift; sourceTree = "<group>"; };
+		ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoTransitionController.swift; sourceTree = "<group>"; };
+		ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoTransitionAnimator.swift; sourceTree = "<group>"; };
+		ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoDismissalInteractionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +96,10 @@
 			children = (
 				AB3DDE7D1C07254D00D2F446 /* Protocols */,
 				AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */,
+				ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */,
+				ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */,
 				ABEE69241C0C839D00FB688D /* ABPhotosDataSource.swift */,
+				ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */,
 				AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */,
 			);
 			name = ABPhotosFramework;
@@ -182,10 +191,13 @@
 				AB3DDE871C073FC200D2F446 /* ABPhotosOverlayView.swift in Sources */,
 				AB3DDE671C0703C800D2F446 /* ViewController.swift in Sources */,
 				AB3DDE651C0703C800D2F446 /* AppDelegate.swift in Sources */,
+				ABEE69271C0C8EDA00FB688D /* ABPhotoTransitionController.swift in Sources */,
 				AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */,
 				AB3DDE771C0716DE00D2F446 /* PhotosProvider.swift in Sources */,
 				AB3DDE7C1C07225800D2F446 /* ABPhotosViewController.swift in Sources */,
 				AB3DDE851C07385600D2F446 /* ABPhotosViewControllerDelegate.swift in Sources */,
+				ABEE69291C0C905800FB688D /* ABPhotoTransitionAnimator.swift in Sources */,
+				ABEE692B1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift in Sources */,
 				AB3DDE7F1C07259100D2F446 /* ABPhoto.swift in Sources */,
 				AB3DDE811C0727A500D2F446 /* ABPhotoContainer.swift in Sources */,
 				ABEE69251C0C839D00FB688D /* ABPhotosDataSource.swift in Sources */,

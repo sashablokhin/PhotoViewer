@@ -162,8 +162,6 @@ class ABPhotosOverlayView : UIView {
             addConstraints([bottomConstraint, widthConstraint, horizontalPositionConstraint])
             
         }
-        
-        
     }
 }
 

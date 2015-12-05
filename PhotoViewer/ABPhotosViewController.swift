@@ -28,6 +28,9 @@ let ABPhotosViewControllerCloseButtinImageInsets = UIEdgeInsets(top: 3, left: 0,
     var pageViewController: UIPageViewController?
     
     // The object conforming to `ABPhoto` that is currently being displayed by the `pageViewController`.
+    
+    var transitionController: ABPhotoTransitionController?
+
 
     var currentlyDisplayedPhoto: ABPhoto?
     
@@ -108,9 +111,6 @@ let ABPhotosViewControllerCloseButtinImageInsets = UIEdgeInsets(top: 3, left: 0,
     
     /*
     - (void)commonInitWithPhotos:(NSArray *)photos initialPhoto:(id <NYTPhoto>)initialPhoto {
-    _dataSource = [[NYTPhotosDataSource alloc] initWithPhotos:photos];
-    _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPanWithGestureRecognizer:)];
-    _singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didSingleTapWithGestureRecognizer:)];
     
     _transitionController = [[NYTPhotoTransitionController alloc] init];
     self.modalPresentationStyle = UIModalPresentationCustom;
@@ -130,6 +130,10 @@ let ABPhotosViewControllerCloseButtinImageInsets = UIEdgeInsets(top: 3, left: 0,
     
     
     func commonInitWithPhotos(photos: [ABPhoto], initialPhoto: ABPhoto) {
+        dataSource = ABPhotosDataSource(withPhotos: photos)
+        panGestureRecognizer = UIPanGestureRecognizer(target: self, action: "didSingleTapWithGestureRecognizer:")
+        singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: "didSingleTapWithGestureRecognizer:")
+        
         
     }
     
