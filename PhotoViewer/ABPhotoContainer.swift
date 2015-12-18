@@ -11,5 +11,5 @@
 
 protocol ABPhotoContainer {
     // An object conforming to the `ABPhoto` protocol.
-    var photo: ABPhoto {get}
+    var photo: ABPhoto? {get}
 }

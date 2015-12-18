@@ -48,7 +48,9 @@ protocol ABPhotosViewControllerDataSource {
     *
     *  @return The photo at the index, or `nil` if there is none.
     */
-    func objectAtIndexedSubscript(photoIndex: Int) -> ABPhoto?
+    //func objectAtIndexedSubscript(photoIndex: Int) -> ABPhoto?
+    
+    subscript(photoIndex: Int) -> ABPhoto? {get}
 }
 
 

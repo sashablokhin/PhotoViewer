@@ -14,7 +14,7 @@ class ABPhotosOverlayView : UIView {
     var navigationItem: UINavigationItem?
 
     // The internal navigation bar used to set the bar button items and title of the overlay.
-    var navigationBar: UINavigationBar?
+    var navigationBar: UINavigationBar!
 
     // The title of the overlay. Centered between the left and right bar button items.
     var title: String? {
@@ -90,7 +90,8 @@ class ABPhotosOverlayView : UIView {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        //fatalError("init(coder:) has not been implemented")
     }
     
     override func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
@@ -119,25 +120,26 @@ class ABPhotosOverlayView : UIView {
     
     func setupNavigationBar() {
         navigationBar = UINavigationBar()
-        navigationBar!.translatesAutoresizingMaskIntoConstraints = false
+        navigationBar.translatesAutoresizingMaskIntoConstraints = false
         
         // Make navigation bar background fully transparent.
-        navigationBar!.backgroundColor = UIColor.clearColor();
-        navigationBar!.barTintColor = nil;
-        navigationBar!.translucent = true;
-        navigationBar!.shadowImage = UIImage()
-        navigationBar!.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        navigationBar.backgroundColor = UIColor.clearColor();
+        navigationBar.barTintColor = nil;
+        navigationBar.translucent = true;
+        navigationBar.shadowImage = UIImage()
+        navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
         
         navigationItem = UINavigationItem(title: "")
-        navigationBar!.items = [navigationItem!]
+        navigationBar.items = [navigationItem!]
         
-        addSubview(navigationBar!)
+        addSubview(navigationBar)
         
-        let topConstraint = NSLayoutConstraint(item: navigationBar!, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
+        let topConstraint = NSLayoutConstraint(item: navigationBar, attribute: .Top, relatedBy:
+            .Equal, toItem: self, attribute: .Top, multiplier: 1.0, constant: 0.0)
         
-        let widthConstraint = NSLayoutConstraint(item: navigationBar!, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Width, multiplier: 1.0, constant: 0.0)
+        let widthConstraint = NSLayoutConstraint(item: navigationBar, attribute: .Width, relatedBy: .Equal, toItem: self, attribute: .Width, multiplier: 1.0, constant: 0.0)
         
-        let horizontalPositionConstraint = NSLayoutConstraint(item: navigationBar!, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
+        let horizontalPositionConstraint = NSLayoutConstraint(item: navigationBar, attribute: .CenterX, relatedBy: .Equal, toItem: self, attribute: .CenterX, multiplier: 1.0, constant: 0.0)
         
         addConstraints([topConstraint, widthConstraint, horizontalPositionConstraint])
     }
@@ -152,6 +154,7 @@ class ABPhotosOverlayView : UIView {
             
             captionView?.removeFromSuperview()
             captionView?.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(self.captionView!)
             
             let bottomConstraint = NSLayoutConstraint(item: captionView!, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
             
@@ -160,7 +163,6 @@ class ABPhotosOverlayView : UIView {
             let horizontalPositionConstraint = NSLayoutConstraint(item: captionView!, attribute: NSLayoutAttribute.CenterX, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.CenterX, multiplier: 1.0, constant: 0.0)
             
             addConstraints([bottomConstraint, widthConstraint, horizontalPositionConstraint])
-            
         }
     }
 }

@@ -13,13 +13,13 @@ import UIKit
 
 @objc protocol ABPhoto {
     // The image to display.
-    var image: UIImage {get}
+    var image: UIImage? {get}
     
     // A placeholder image for display while the image is loading.
-    var placeholderImage: UIImage {get}
+    var placeholderImage: UIImage? {get}
     
     // An attributed string for display as the title of the caption.
-    var attributedCaptionTitle: NSAttributedString {get}
+    var attributedCaptionTitle: NSAttributedString? {get}
     
     // An attributed string for display as the summary of the caption.
     var attributedCaptionSummary: NSAttributedString {get}

@@ -24,6 +24,10 @@
 		ABEE69271C0C8EDA00FB688D /* ABPhotoTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */; };
 		ABEE69291C0C905800FB688D /* ABPhotoTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */; };
 		ABEE692B1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */; };
+		ABEE692D1C138EC600FB688D /* ABPhotoCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE692C1C138EC600FB688D /* ABPhotoCaptionView.swift */; };
+		ABEE692F1C1838A800FB688D /* Resources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABEE692E1C1838A800FB688D /* Resources.xcassets */; };
+		ABEE69311C186F9900FB688D /* ABPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69301C186F9900FB688D /* ABPhotoViewController.swift */; };
+		ABEE69331C186FDB00FB688D /* ABScalingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEE69321C186FDB00FB688D /* ABScalingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoTransitionController.swift; sourceTree = "<group>"; };
 		ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoTransitionAnimator.swift; sourceTree = "<group>"; };
 		ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoDismissalInteractionController.swift; sourceTree = "<group>"; };
+		ABEE692C1C138EC600FB688D /* ABPhotoCaptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoCaptionView.swift; sourceTree = "<group>"; };
+		ABEE692E1C1838A800FB688D /* Resources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Resources.xcassets; sourceTree = "<group>"; };
+		ABEE69301C186F9900FB688D /* ABPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABPhotoViewController.swift; sourceTree = "<group>"; };
+		ABEE69321C186FDB00FB688D /* ABScalingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABScalingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +104,15 @@
 			children = (
 				AB3DDE7D1C07254D00D2F446 /* Protocols */,
 				AB3DDE7B1C07225800D2F446 /* ABPhotosViewController.swift */,
+				ABEE69301C186F9900FB688D /* ABPhotoViewController.swift */,
 				ABEE69261C0C8EDA00FB688D /* ABPhotoTransitionController.swift */,
 				ABEE692A1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift */,
 				ABEE69241C0C839D00FB688D /* ABPhotosDataSource.swift */,
 				ABEE69281C0C905800FB688D /* ABPhotoTransitionAnimator.swift */,
 				AB3DDE861C073FC200D2F446 /* ABPhotosOverlayView.swift */,
+				ABEE692C1C138EC600FB688D /* ABPhotoCaptionView.swift */,
+				ABEE69321C186FDB00FB688D /* ABScalingImageView.swift */,
+				ABEE692E1C1838A800FB688D /* Resources.xcassets */,
 			);
 			name = ABPhotosFramework;
 			sourceTree = "<group>";
@@ -175,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3DDE6F1C0703C800D2F446 /* LaunchScreen.storyboard in Resources */,
+				ABEE692F1C1838A800FB688D /* Resources.xcassets in Resources */,
 				AB3DDE6C1C0703C800D2F446 /* Assets.xcassets in Resources */,
 				AB3DDE6A1C0703C800D2F446 /* Main.storyboard in Resources */,
 			);
@@ -189,12 +202,15 @@
 			files = (
 				AB3DDE791C0717D000D2F446 /* Photo.swift in Sources */,
 				AB3DDE871C073FC200D2F446 /* ABPhotosOverlayView.swift in Sources */,
+				ABEE69311C186F9900FB688D /* ABPhotoViewController.swift in Sources */,
 				AB3DDE671C0703C800D2F446 /* ViewController.swift in Sources */,
 				AB3DDE651C0703C800D2F446 /* AppDelegate.swift in Sources */,
 				ABEE69271C0C8EDA00FB688D /* ABPhotoTransitionController.swift in Sources */,
 				AB3DDE831C0728A300D2F446 /* ABPhotosViewControllerDataSource.swift in Sources */,
 				AB3DDE771C0716DE00D2F446 /* PhotosProvider.swift in Sources */,
+				ABEE69331C186FDB00FB688D /* ABScalingImageView.swift in Sources */,
 				AB3DDE7C1C07225800D2F446 /* ABPhotosViewController.swift in Sources */,
+				ABEE692D1C138EC600FB688D /* ABPhotoCaptionView.swift in Sources */,
 				AB3DDE851C07385600D2F446 /* ABPhotosViewControllerDelegate.swift in Sources */,
 				ABEE69291C0C905800FB688D /* ABPhotoTransitionAnimator.swift in Sources */,
 				ABEE692B1C0C907600FB688D /* ABPhotoDismissalInteractionController.swift in Sources */,

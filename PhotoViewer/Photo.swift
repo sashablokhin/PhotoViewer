@@ -9,9 +9,9 @@
 import UIKit
 
 class Photo: NSObject, ABPhoto {
-    var image: UIImage
-    var placeholderImage: UIImage
-    let attributedCaptionTitle: NSAttributedString
+    var image: UIImage?
+    var placeholderImage: UIImage?
+    let attributedCaptionTitle: NSAttributedString?
     let attributedCaptionSummary = NSAttributedString(string: "summary string", attributes: [NSForegroundColorAttributeName: UIColor.grayColor()])
     let attributedCaptionCredit = NSAttributedString(string: "credit", attributes: [NSForegroundColorAttributeName: UIColor.darkGrayColor()])
     

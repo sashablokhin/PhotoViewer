@@ -8,6 +8,10 @@
 
 import UIKit
 
+//let CustomEverythingPhotoIndex = 1, DefaultLoadingSpinnerPhotoIndex = 3, NoReferenceViewPhotoIndex = 4
+let CustomEverythingPhotoIndex = 1, DefaultLoadingSpinnerPhotoIndex = 2, NoReferenceViewPhotoIndex = 3
+let PrimaryImageName = "img_00"
+
 class PhotosProvider: NSObject {
     
     let photos: [Photo] = {

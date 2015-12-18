@@ -49,7 +49,11 @@ class ABPhotosDataSource: ABPhotosViewControllerDataSource {
         return self.photos.contains({$0 === photo})
     }
 
-    func objectAtIndexedSubscript(photoIndex: Int) -> ABPhoto? {
+    //func objectAtIndexedSubscript(photoIndex: Int) -> ABPhoto? {
+    //    return self.photoAtIndex(photoIndex)
+    //}
+    
+    subscript(photoIndex: Int) -> ABPhoto? {
         return self.photoAtIndex(photoIndex)
     }
 }
